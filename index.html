@@ -26,19 +26,19 @@
           <p id="question1text">What does web accessibility entail? Tick all that apply.</p>
           <div id="answer1">
             <div>
-              <input type="checkbox" id="impairments" name="impairments">
-              <label for="impairments">Taking peoples disabilities into account when designing a web page, e.g. auditory, cognitive, visual impairments, etc.</label>
+              <input type="checkbox" id="impairments" name="question1answer">
+              <label for="impairments">Taking people's disabilities into account when designing a web page, e.g. auditory, cognitive, visual impairments, etc.</label>
             </div>
             <div>
-              <input type="checkbox" id="device" name="device">
+              <input type="checkbox" id="device" name="question1answer">
               <label for="device">Taking details about the user's device into account</label>
             </div>
             <div>
-              <input type="checkbox" id="limitations" name="limitations">
+              <input type="checkbox" id="limitations" name="question1answer">
               <label for="limitations">Taking into account people without disabilities, e.g. those with 'temporary disabilities', like a broken arm, or 'situational limitations', like bright sunlight or slow internet</label>
             </div>
             <div>
-              <input type="checkbox" id="interaction" name="interaction">
+              <input type="checkbox" id="interaction" name="question1answer">
               <label for="interaction">Making a website with interesting user interaction</label>
             </div>
             <p id="result1"></p>
@@ -48,14 +48,36 @@
           <p id="question2text">Should you have text alternatives for non-text content?</p>
           <div id="answer2">
             <div>
-              <input type="radio" id="yes" name="yes">
+              <input type="radio" id="yes" name="question2answer">
               <label for="yes">Yes</label>
             </div>
             <div>
-              <input type="radio" id="no" name="no">
+              <input type="radio" id="no" name="question2answer">
               <label for="no">No</label>
             </div>
             <p id="result2"></p>
+          </div>
+        </div>
+        <div id="question3">
+          <p id="question3text">How can you provide accessibility to someone who is blind? Tick all that apply</p>
+          <div id="answer3">
+            <div>
+              <input type="checkbox" id="mouseToKeyboard" name="question3answer">
+              <label for="mouseToKeyboard">Have all elements you can select with a mouse be able to be selected by keyboard</label>
+            </div>
+            <div>
+              <input type="checkbox" id="labels" name="question3answer">
+              <label for="labels">Labels correctly describe the input field they are for</label>
+            </div>
+            <div>
+              <input type="checkbox" id="trapTab" name="question3answer">
+              <label for="trapTab">Never allow the keyboard to be trapped</label>
+            </div>
+            <div>
+              <input type="checkbox" id="links" name="question3answer">
+              <label for="links">Have links contain all information needed to understand where it takes you (e.g. not just 'click here')</label>
+            </div>
+            <p id="result3"></p>
           </div>
         </div>
         <input type="submit" id="submit" value="Submit answers"></input>
