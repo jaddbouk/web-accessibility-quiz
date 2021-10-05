@@ -121,8 +121,26 @@ function showResults() {
     result.style.color = "green";
     correct++;
   } else {
-    result.innerHTML = "Incorrect! The answer was d ."
+    result.innerHTML = "Incorrect! The answer was d."
     question5text.style.color = "red";
+    result.style.color = "red";
+  }
+
+  // Question 6 ------------------------------------------------------------------------------
+  const question6text = document.getElementById('question6text');
+  const question6 = document.getElementById('POUR2').checked;
+  const correct6 = true;
+  result = document.getElementById('result6');
+  numOfQuestions++;
+
+  if (question6 == correct6) {
+    result.innerHTML = "Correct!";
+    question6text.style.color = "green";
+    result.style.color = "green";
+    correct++;
+  } else {
+    result.innerHTML = "Incorrect! The answer was b."
+    question6text.style.color = "red";
     result.style.color = "red";
   }
 
