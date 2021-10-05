@@ -1,0 +1,58 @@
+html {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  background-color: #036;
+  color: #f0ead6;
+  text-align: center;
+  padding: 10%;
+}
+
+header h1 {
+  font-size: 5em;
+}
+
+header p {
+  font-size: 1em;
+}
+
+header a {
+  color: #f0ead6;
+  text-decoration: none;
+  border-bottom: 1px dashed #f0ead6;
+  transition: 300ms;
+}
+
+header a:hover {
+  color: white;
+  font-size: 1.01em;
+}
+
+main {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f5ec;
+}
+
+article {
+  margin: auto;
+  width: 60%;
+}
+
+form > h2 {
+  font-size: 2em;
+}
+
+form > div > p {
+  font-weight: 700;
+}
+
+form > div > div {
+  margin-left: 5%;
+}
+
+form > div {
+  border-bottom: solid 1px black;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="android-chrome-192x192.png">
+  <title>Web accessibility quiz!</title>
+  <meta name="description" content="This quiz tests the users knowledge about web accessibility">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Web Accessibility Quiz</h1>
+    <p><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank  ">Click here to learn more about web accessibility</a></p>
+  </header>
+  <main>
+    <article>
+      <form action="#" onsubmit="return false;">
+        <h2>Quiz</h2>
+        <div id="question1">
+          <p id="question1text">What does web accessibility entail? Tick all that apply.</p>
+          <div id="answer1">
+            <div>
+              <input type="checkbox" id="impairments" name="impairments">
+              <label for="impairments">Taking peoples disabilities into account when designing a web page, e.g. auditory, cognitive, visual impairments, etc.</label>
+            </div>
+            <div>
+              <input type="checkbox" id="device" name="device">
+              <label for="device">Taking details about the user's device into account</label>
+            </div>
+            <div>
+              <input type="checkbox" id="limitations" name="limitations">
+              <label for="limitations">Taking into account people without disabilities, e.g. those with 'temporary disabilities', like a broken arm, or 'situational limitations', like bright sunlight or slow internet</label>
+            </div>
+            <div>
+              <input type="checkbox" id="interaction" name="interaction">
+              <label for="interaction">Making a website with interesting user interaction</label>
+            </div>
+            <p id="result1"></p>
+          </div>
+        </div>
+        <div id="question2">
+          <p id="question2text">Should you have text alternatives for non-text content?</p>
+          <div id="answer2">
+            <div>
+              <input type="radio" id="yes" name="yes">
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="no" name="no">
+              <label for="no">No</label>
+            </div>
+            <p id="result2"></p>
+          </div>
+        </div>
+        <input type="submit" id="submit" value="Submit answers"></input>
+      </form>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
