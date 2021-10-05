@@ -144,6 +144,42 @@ function showResults() {
     result.style.color = "red";
   }
 
+  // Question 7 ------------------------------------------------------------------------------
+  const question7text = document.getElementById('question7text');
+  const question7 = document.getElementById('throughout').checked;
+  const correct7 = true;
+  result = document.getElementById('result7');
+  numOfQuestions++;
+
+  if (question7 == correct7) {
+    result.innerHTML = "Correct!";
+    question7text.style.color = "green";
+    result.style.color = "green";
+    correct++;
+  } else {
+    result.innerHTML = "Incorrect! The answer was b."
+    question7text.style.color = "red";
+    result.style.color = "red";
+  }
+
+  // Question 8 ------------------------------------------------------------------------------
+  const question8text = document.getElementById('question8text');
+  const question8 = document.getElementById('alt').value;
+  const correct8 = 'alt="slabs of rock jutting from a cliffside"';
+  result = document.getElementById('result8');
+  numOfQuestions++;
+
+  if (question8 == correct8) {
+    result.innerHTML = "Correct!";
+    question8text.style.color = "green";
+    result.style.color = "green";
+    correct++;
+  } else {
+    result.innerHTML = "Incorrect! The answer was b."
+    question8text.style.color = "red";
+    result.style.color = "red";
+  }
+
   setTimeout(function() {
     alert(`You got ${correct} out of ${numOfQuestions} questions correct!`);
   }, 10);

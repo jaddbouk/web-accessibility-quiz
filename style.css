@@ -65,6 +65,23 @@ footer {
   text-align: center;
 }
 
+figure {
+  width: 50%;
+  margin: auto;
+}
+
+figure > img{
+  width: 100%;
+}
+
+figure > figcaption {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#alt {
+  background-color: inherit;
+}
 /* -------------------- Changing the look of the scrollbar -------------------- */
 
 ::-webkit-scrollbar{
