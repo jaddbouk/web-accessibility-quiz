@@ -62,7 +62,7 @@ function showResults() {
   result = document.getElementById('result3');
   numOfQuestions++;
 
-  var count = 0;
+  count = 0;
   for (let i = 0; i < question1.length; i++) {
     if (question3[i] == correct3[i]) {
       count++;
@@ -90,7 +90,7 @@ function showResults() {
   result = document.getElementById('result4');
   numOfQuestions++;
 
-  var count = 0;
+  count = 0;
   for (let i = 0; i < question1.length; i++) {
     if (question4[i] == correct4[i]) {
       count++;
