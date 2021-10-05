@@ -44,6 +44,7 @@
             <p id="result1"></p>
           </div>
         </div>
+
         <div id="question2">
           <p id="question2text">Should you have text alternatives for non-text content?</p>
           <div id="answer2">
@@ -58,8 +59,9 @@
             <p id="result2"></p>
           </div>
         </div>
+
         <div id="question3">
-          <p id="question3text">How can you provide accessibility to someone who is blind? Tick all that apply</p>
+          <p id="question3text">How can you provide accessibility to someone who is blind? Tick all that apply.</p>
           <div id="answer3">
             <div>
               <input type="checkbox" id="mouseToKeyboard" name="question3answer">
@@ -78,6 +80,52 @@
               <label for="links">Have links contain all information needed to understand where it takes you (e.g. not just 'click here')</label>
             </div>
             <p id="result3"></p>
+          </div>
+        </div>
+
+        <div id="question4">
+          <p id="question4text">How can you ensure that your text is clear? Tick all that apply.</p>
+          <div id="answer4">
+            <div>
+              <input type="checkbox" id="pageLang" name="question4answer">
+              <label for="pageLang">Defining the primary language of a web page</label>
+            </div>
+            <div>
+              <input type="checkbox" id="textLang" name="question4answer">
+              <label for="textLang">Defining the language of certain passages of text</label>
+            </div>
+            <div>
+              <input type="checkbox" id="terms" name="question4answer">
+              <label for="terms">Use specific terminology, even when it is not widely known</label>
+            </div>
+            <div>
+              <input type="checkbox" id="simple" name="question4answer">
+              <label for="simple">Using clear and simple language</label>
+            </div>
+            <p id="result4"></p>
+          </div>
+        </div>
+
+        <div id="question5">
+          <p id="question5text">What does level A, AA and AAA refer to in the WCAG (Web Content Accessibility Guidelines)?</p>
+          <div id="answer5">
+            <div>
+              <input type="radio" id="difficultyAtoAAA" name="question5answer">
+              <label for="difficultyAtoAAA">The difficulty in implenting the guideline (A being easiest, AAA being hardest)</label>
+            </div>
+            <div>
+              <input type="radio" id="necessityAAAtoA" name="question5answer">
+              <label for="necessityAAAtoA">The necessity to implent each guideline (A being most necessary, AAA being least necessary)</label>
+            </div>
+            <div>
+              <input type="radio" id="difficultyAAAtoA" name="question5answer">
+              <label for="difficultyAAAtoA">The difficulty in implenting the guideline (A being hardest, AAA being easiest)</label>
+            </div>
+            <div>
+              <input type="radio" id="necessityAtoAAA" name="question5answer">
+              <label for="necessityAtoAAA">The necessity to implent each guideline (A being least necessary, AAA being most necessary)</label>
+            </div>
+            <p id="result5"></p>
           </div>
         </div>
         <input type="submit" id="submit" value="Submit answers"></input>

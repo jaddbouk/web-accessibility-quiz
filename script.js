@@ -80,6 +80,52 @@ function showResults() {
     result.style.color = "red";
   }
 
+  // Question 4 ------------------------------------------------------------------------------
+  const question4text = document.getElementById('question4text');
+  const question4 = [document.getElementById('pageLang').checked,
+                     document.getElementById('textLang').checked,
+                     document.getElementById('terms').checked,
+                     document.getElementById('simple').checked];
+  const correct4 = [true, true, false, true];
+  result = document.getElementById('result4');
+  numOfQuestions++;
+
+  var count = 0;
+  for (let i = 0; i < question1.length; i++) {
+    if (question4[i] == correct4[i]) {
+      count++;
+    }
+  }
+
+  if (count == question4.length) {
+    result.innerHTML = "Correct!";
+    question4text.style.color = "green";
+    result.style.color = "green";
+    correct++;
+  } else {
+    result.innerHTML = "Incorrect! The answer was a, b and d."
+    question4text.style.color = "red";
+    result.style.color = "red";
+  }
+
+  // Question 5 ------------------------------------------------------------------------------
+  const question5text = document.getElementById('question5text');
+  const question5 = document.getElementById('necessityAtoAAA').checked;
+  const correct5 = true;
+  result = document.getElementById('result5');
+  numOfQuestions++;
+
+  if (question5 == correct5) {
+    result.innerHTML = "Correct!";
+    question5text.style.color = "green";
+    result.style.color = "green";
+    correct++;
+  } else {
+    result.innerHTML = "Incorrect! The answer was d ."
+    question5text.style.color = "red";
+    result.style.color = "red";
+  }
+
   setTimeout(function() {
     alert(`You got ${correct} out of ${numOfQuestions} questions correct!`);
   }, 10);
