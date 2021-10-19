@@ -1,6 +1,6 @@
 const submitButton = document.getElementById('submit');
 
-function showResults() {
+showResults = () => {
   submitButton.disabled = true;
   var result;
   var numOfQuestions = 0;
@@ -110,18 +110,19 @@ function showResults() {
 
   // Question 5 ------------------------------------------------------------------------------
   const question5text = document.getElementById('question5text');
-  const question5 = document.getElementById('necessityAtoAAA').checked;
+  const question5a = document.getElementById('necessityAAAtoA').checked;
+  const question5b = document.getElementById('difficultyAtoAAA').checked;
   const correct5 = true;
   result = document.getElementById('result5');
   numOfQuestions++;
 
-  if (question5 == correct5) {
+  if ((question5a == correct5) || (question5b == correct5)) {
     result.innerHTML = "Correct!";
     question5text.style.color = "green";
     result.style.color = "green";
     correct++;
   } else {
-    result.innerHTML = "Incorrect! The answer was d."
+    result.innerHTML = "Incorrect! The answer was a or b."
     question5text.style.color = "red";
     result.style.color = "red";
   }
